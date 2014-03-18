@@ -1,26 +1,24 @@
+list-n-stream
+=============
 
-    ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# What
 
+A simple video list n streamer
 
-Welcome to Cloud9 IDE!
+# why
 
-To get you started, we have created a demo chat application.
+my fiancee wants to be able to watch videos off our media centre on her chromebook
 
-1) Open the server.js file
+# usage
 
-2) Click the 'Run' button at the top to start your server,
+    npm i -g list-n-stream
 
-3) Click the URL that is emitted to the Output tab of the console
+    cd ./my/video/dir
 
-Happy coding!
-The Cloud9 IDE team
+    list-n-stream
 
-## Support & Documentation
+will serve at 8080 by default.
 
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide.
+optinally you can override the port with
+
+    list-n-stream -p 8082
