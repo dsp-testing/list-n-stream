@@ -1,0 +1,12 @@
+{
+  "name": "list-n-stream",
+  "version": "0.0.0",
+  "description": "super basic dirlist and file streaming server",
+  "main": "server.js",
+  "repository": "",
+  "author": "Mostafa Eweda <mostafa@c9.io>",
+  "dependencies": {
+    "beeline": "~0.2.1",
+    "commander": "~2.1.0"
+  }
+}
