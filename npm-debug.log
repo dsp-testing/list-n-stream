@@ -1,23 +1,118 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/usr/libexec/openshift/cartridges/c9-0.1/root/bin/node-openshift-v10',
 1 verbose cli   '/usr/libexec/openshift/cartridges/c9-0.1/root/lib-0.10/node_modules/npm/bin/npm-cli.js',
-1 verbose cli   'vers',
-1 verbose cli   '0.0.1' ]
+1 verbose cli   'pub',
+1 verbose cli   '--force' ]
 2 info using npm@1.3.8
 3 info using node@v0.10.22
-4 error Error: spawn ENOENT
-4 error     at errnoException (child_process.js:980:11)
-4 error     at Process.ChildProcess._handle.onexit (child_process.js:771:34)
-5 error If you need help, you may report this log at:
-5 error     <http://github.com/isaacs/npm/issues>
-5 error or email it to:
-5 error     <npm-@googlegroups.com>
-6 error System Linux 2.6.32-431.3.1.el6oso.bz844450v4.x86_64
-7 error command "/usr/libexec/openshift/cartridges/c9-0.1/root/bin/node-openshift-v10" "/usr/libexec/openshift/cartridges/c9-0.1/root/lib-0.10/node_modules/npm/bin/npm-cli.js" "vers" "0.0.1"
-8 error cwd /var/lib/stickshift/53265c2ae0b8cd10fa000866/app-root/data/802826
-9 error node -v v0.10.22
-10 error npm -v 1.3.8
-11 error syscall spawn
-12 error code ENOENT
-13 error errno ENOENT
-14 verbose exit [ 1, true ]
+4 warn using --force I sure hope you know what you are doing.
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz
+13 verbose folder .
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/1f1177db-tar.lock
+16 silly lockFile a6c31582-4670-0-10313074616715312-tmp-tgz tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz
+17 verbose lock tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/a6c31582-4670-0-10313074616715312-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile a6c31582-4670-0-10313074616715312-tmp-tgz tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz
+21 silly lockFile a6c31582-4670-0-10313074616715312-tmp-tgz tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz
+22 verbose tar unpack /tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz
+23 silly lockFile 1a60deec-4670-0-10313074616715312-package tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package
+24 verbose lock tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/1a60deec-4670-0-10313074616715312-package.lock
+25 silly lockFile a6c31582-4670-0-10313074616715312-tmp-tgz tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz
+26 verbose lock tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/a6c31582-4670-0-10313074616715312-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm modified mode [ 'package.json', 384, 420 ]
+30 silly gunzTarPerm extractEntry .npmignore
+31 silly gunzTarPerm modified mode [ '.npmignore', 384, 420 ]
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm modified mode [ 'README.md', 448, 484 ]
+34 silly gunzTarPerm extractEntry server.js
+35 silly gunzTarPerm modified mode [ 'server.js', 384, 420 ]
+36 silly lockFile 1a60deec-4670-0-10313074616715312-package tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package
+37 silly lockFile 1a60deec-4670-0-10313074616715312-package tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package
+38 silly lockFile a6c31582-4670-0-10313074616715312-tmp-tgz tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz
+39 silly lockFile a6c31582-4670-0-10313074616715312-tmp-tgz tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/tmp.tgz
+40 verbose tar pack [ '/var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz',
+40 verbose tar pack   '/tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package' ]
+41 verbose tarball /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz
+42 verbose folder /tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package
+43 silly lockFile 1a60deec-4670-0-10313074616715312-package tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package
+44 verbose lock tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/1a60deec-4670-0-10313074616715312-package.lock
+45 silly lockFile b874c031--list-n-stream-0-0-7-package-tgz tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz
+46 verbose lock tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/b874c031--list-n-stream-0-0-7-package-tgz.lock
+47 silly lockFile 1a60deec-4670-0-10313074616715312-package tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package
+48 silly lockFile 1a60deec-4670-0-10313074616715312-package tar:///tmp/npm-353582-e07Ytxcj/1395145434670-0.10313074616715312/package
+49 silly lockFile b874c031--list-n-stream-0-0-7-package-tgz tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz
+50 silly lockFile b874c031--list-n-stream-0-0-7-package-tgz tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz
+51 silly lockFile e82b6ae5--npm-list-n-stream-0-0-7-package /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package
+52 verbose lock /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/e82b6ae5--npm-list-n-stream-0-0-7-package.lock
+53 silly lockFile e82b6ae5--npm-list-n-stream-0-0-7-package /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package
+54 silly lockFile e82b6ae5--npm-list-n-stream-0-0-7-package /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package
+55 verbose tar unpack /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz
+56 silly lockFile 15144682--npm-list-n-stream-0-0-7-package tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package
+57 verbose lock tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/15144682--npm-list-n-stream-0-0-7-package.lock
+58 silly lockFile b874c031--list-n-stream-0-0-7-package-tgz tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz
+59 verbose lock tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/b874c031--list-n-stream-0-0-7-package-tgz.lock
+60 silly gunzTarPerm modes [ '755', '644' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm extractEntry .npmignore
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm extractEntry server.js
+65 silly lockFile 15144682--npm-list-n-stream-0-0-7-package tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package
+66 silly lockFile 15144682--npm-list-n-stream-0-0-7-package tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package
+67 silly lockFile b874c031--list-n-stream-0-0-7-package-tgz tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz
+68 silly lockFile b874c031--list-n-stream-0-0-7-package-tgz tar:///var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz
+69 verbose chmod /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz 644
+70 verbose chown /var/lib/openshift/53265c2ae0b8cd10fa000866/app-root/data/.npm/list-n-stream/0.0.7/package.tgz [ 3015, 3015 ]
+71 silly lockFile 3a52ce78- .
+72 silly lockFile 3a52ce78- .
+73 silly publish { name: 'list-n-stream',
+73 silly publish   version: '0.0.7',
+73 silly publish   description: 'super basic dirlist and file streaming server',
+73 silly publish   main: 'server.js',
+73 silly publish   repository:
+73 silly publish    { type: 'git',
+73 silly publish      url: 'git://github.com/KoryNunn/list-n-stream.git' },
+73 silly publish   dependencies: { beeline: '~0.2.1', commander: '~2.1.0' },
+73 silly publish   preferGlobal: 'true',
+73 silly publish   bin: { 'list-n-stream': './server.js' },
+73 silly publish   scripts: { start: 'node server.js' },
+73 silly publish   devDependencies: {},
+73 silly publish   author: '',
+73 silly publish   license: 'BSD-2-Clause',
+73 silly publish   bugs: { url: 'https://github.com/KoryNunn/list-n-stream/issues' },
+73 silly publish   readme: '\n    ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.\n    \'  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---\'\n    |  |    |  || .-. ||  ||  |\' .-. |`..\'  |  |  ||  |  \\  :|  `--, \n    \'  \'--\'\\|  |\' \'-\' \'\'  \'\'  \'\\ `-\' | .\'  /   |  ||  \'--\'  /|  `---.\n     `-----\'`--\' `---\'  `----\'  `---\'  `--\'    `--\'`-------\' `------\'\n    ----------------------------------------------------------------- \n\n\nWelcome to Cloud9 IDE!\n\nTo get you started, we have created a demo chat application.\n\n1) Open the server.js file\n\n2) Click the \'Run\' button at the top to start your server,\n\n3) Click the URL that is emitted to the Output tab of the console\n\nHappy coding!\nThe Cloud9 IDE team\n\n## Support & Documentation\n\nVisit http://docs.c9.io for documentation, or http://support.c9.io for support.\nTo watch some training videos, visit http://www.youtube.com/user/c9ide.\n',
+73 silly publish   readmeFilename: 'README.md',
+73 silly publish   _id: 'list-n-stream@0.0.7',
+73 silly publish   dist: { shasum: 'e1ce7fcf3438b594e31f9eb16397a37bb2a948ab' },
+73 silly publish   _from: '.' }
+74 error need auth auth and email required for publishing
+74 error need auth You need to authorize this machine using `npm adduser`
+75 error System Linux 2.6.32-431.3.1.el6oso.bz844450v4.x86_64
+76 error command "/usr/libexec/openshift/cartridges/c9-0.1/root/bin/node-openshift-v10" "/usr/libexec/openshift/cartridges/c9-0.1/root/lib-0.10/node_modules/npm/bin/npm-cli.js" "pub" "--force"
+77 error cwd /var/lib/stickshift/53265c2ae0b8cd10fa000866/app-root/data/802826
+78 error node -v v0.10.22
+79 error npm -v 1.3.8
+80 error code ENEEDAUTH
+81 verbose exit [ 1, true ]
