@@ -1,6 +1,6 @@
 {
   "name": "list-n-stream",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "super basic dirlist and file streaming server",
   "main": "server.js",
   "repository": {
