@@ -53,13 +53,15 @@ function serveFile(request, response, path, info){
         response.writeHead(200, {"Content-Type": "text/html"});
         response.end(
             '<style>html, body{margin:0;background:black;}video{height:100%;width:100%}</style>' +
-            '<video src="' + urlBits[0] + '" autoplay></video>'
+            '<video src="' + urlBits[0] + '" autoplay controls></video>'
         );
         return;
     }
 
     var total = info.size,
         contentType = mimeTypes[urlBits[0].split('.').pop()];
+
+    // https://gist.github.com/paolorossi/1993068
 
     if (request.headers['range']) {
         var range = request.headers.range;
@@ -70,13 +72,11 @@ function serveFile(request, response, path, info){
         var start = parseInt(partialstart, 10);
         var end = partialend ? parseInt(partialend, 10) : total-1;
         var chunksize = (end-start)+1;
-        console.log('RANGE: ' + start + ' - ' + end + ' = ' + chunksize);
 
         var file = fs.createReadStream(path, {start: start, end: end});
         response.writeHead(206, { 'Content-Range': 'bytes ' + start + '-' + end + '/' + total, 'Accept-Ranges': 'bytes', 'Content-Length': chunksize, 'Content-Type': contentType });
         file.pipe(response);
     } else {
-        console.log('ALL: ' + total);
         response.writeHead(200, { 'Content-Length': total, 'Content-Type': contentType });
         fs.createReadStream(path).pipe(response);
     }
