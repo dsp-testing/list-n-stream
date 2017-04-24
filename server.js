@@ -85,6 +85,13 @@ function serveFile(request, response, path, info){
 var router = beeline.route({
     '/`path...`': function(request, response, details){
         var path = process.cwd() + '/' + details.path;
+
+        if(~pathHelpers.relative(process.cwd(), path).indexOf('..')) {
+            response.writeHead(401);
+            response.end('Unauthorized');
+            return;
+        }
+
         fs.stat(path, function(error, info){
             if(error){
                 serverError(response, error);
